@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="container">
+  <h1>Welcome to Message Board</h1>
+  <div class="content">
+    <p>This is a simple message board application where you can:</p>
+    <ul>
+      <li>Send messages using the message form</li>
+      <li>View all messages in the read section</li>
+    </ul>
+    <div class="buttons">
+      <a href="{{ url_for('message') }}" class="button">Send Message</a>
+      <a href="{{ url_for('read') }}" class="button">Read Messages</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
